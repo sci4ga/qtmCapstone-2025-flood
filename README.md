@@ -51,7 +51,9 @@ https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/StormData%20RoC%20Cla
 `StormData RoC Cla.ipynb` merges **NOAA Storm Events** detail, location and
 fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
 
-- Aggregate yearly event counts (`event_count`) and total flood-duration (minutes) by county (`CZ_NAME`). Total flood-duration is calculated by (`END_TIME`) -  (`BEGIN_TIME`)
+- Aggregate yearly event counts (`event_count`) and total flood-duration (minutes) by county (`CZ_NAME`).
+
+- Total flood-duration is calculated by (`END_TIME`) -  (`BEGIN_TIME`)
 
 - Compares two multi-year windows (2000-2005 vs 2018-2023) and computes  
    `rate_change_percent` for both event counts and duration (minutes) per county per year.
