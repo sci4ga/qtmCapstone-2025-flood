@@ -91,10 +91,10 @@ fatality CSVs for 2000-2023, cleans and joins them with county polygons.
    
 - Normalized rate of change calculation by setting the range from -100 to 100.
 
-- Exports tidy CSV summaries
-     - (​​rate_change_per_county_Storm.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/rate_change_per_county_Storm.csv) 
-     - (0023_Normalized_event_count_comparison_RoC 1.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/0023_Normalized_event_count_comparison_RoC%201.csv)
-     - GeoJSONs (merged_details (1).geojson https://github.com/sci4ga/qtmCapstone-2025 flood/blob/main/merged_details(1).geojson)for future heatmap and swipe map creation.
+- Exports tidy CSV summaries and GeoJSONs for future heatmap and swipe map creation:
+     - rate_change_per_county_Storm.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/rate_change_per_county_Storm.csv 
+     - 0023_Normalized_event_count_comparison_RoC 1.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/0023_Normalized_event_count_comparison_RoC%201.csv
+     - merged_details (1).geojson https://github.com/sci4ga/qtmCapstone-2025 flood/blob/main/merged_details(1).geojson
 
 - Generates Visualizations for event count distribution by years, as well as limitations of the duration data in the database.
 
