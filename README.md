@@ -42,7 +42,7 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 
 
 ## Data Cleaning Updated  
-- https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
+https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
 
 **Packages and python version:**
 
