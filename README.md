@@ -2,12 +2,12 @@
 
 **Discover Land Cover and Flooding in Georgia**
 ***Summer Sun, Sylvia Xing, Ellie Yang***
-# Overview of the Project
+## Overview of the Project
 The project “Discover Land Cover and Flooding in Georgia” is a data story constructed during the Emory QTM Capstone class. The project is planned to explore the connection between land cover change and flooding events in Georgia, and thus raise awareness among community members about flooding. Mainland cover types looked into are forest, wetland, and developed sites. This shared folder contains all the datasets and their descriptions for this project.
 **Link to Data Story:** https://arcg.is/zmm1q2
 
 
-# Land Cover Analysis
+## Land Cover Analysis
 
 The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each containing the land cover data from 1985-2023 for all the counties (159 in total) in Georgia. The data has two versions:  
 1. the unit is in square kilometer  
@@ -33,16 +33,16 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 - Rank of all kinds of land covers in its percentage change from 2000 in descending order.  
 
 
-# Data Cleaning Updated  
-https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
-_A data cleaning file of CSVs that records flood event details from 1985 to 2024, merged with location files, with folium maps created by year and month, giving an overview of how flood events are distributed
----
+## Data Cleaning Updated  
+- https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
+- A data cleaning file of CSVs that records flood event details from 1985 to 2024, merged with location files, with folium maps created by year and month, giving an overview of how flood events are distributed
 
-# Storm-Event Rate-of-Change (RoC) Analysis  
+
+## Storm-Event Rate-of-Change (RoC) Analysis  
 https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/StormData%20RoC%20Cla.ipynb
 ***A county-level look at how Georgia flood events have changed from 2000-2005 to 2018-2023***
 
-## Overview
+### Overview
 `StormData RoC Cla.ipynb` merges **NOAA Storm Events** detail, location and
 fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
 
