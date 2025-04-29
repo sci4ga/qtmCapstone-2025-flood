@@ -9,6 +9,8 @@ The project “Discover Land Cover and Flooding in Georgia” is a data story co
 
 ## Land Cover Analysis
 
+https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/Land_Cover_Code.zip
+
 **Packages and python version:**  
 
 Python 3.11.5 
