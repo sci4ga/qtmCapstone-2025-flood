@@ -25,7 +25,7 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 
 **NLCD_change_rate_km:** calculate the change rate of land covers for all counties using formula: (End year - Start year)/Start year  
 
-**roc_process_percentage:** Combine all 159 csv files (percentage unit) in a single csv then calculate  the change rate of land covers for all counties using formula: [(End year - Start year)/Start year]*100  
+**Roc_process_percentage:** Combine all 159 csv files (percentage unit) in a single csv then calculate  the change rate of land covers for all counties using formula: [(End year - Start year)/Start year]*100  
 
 *Note that some land covers (e.g.emergent herbaceous wetlands and woody wetlands) are combined to a single type (e.g. wetlands) for analysis; the combination can be found in the type_map in both rate of change calculation file*  
 
