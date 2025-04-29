@@ -74,7 +74,7 @@ fatality CSVs for 2000-2023, cleans and joins them with county polygons.
   
 - Events from Georgia are selected. Among the events, only `Flood`, `Flash Flood`, and `Coastal Flood` are selected to be considered. According to suggestion, ‘Hurricane’ will be taken into consideration in the future.
    
-- Merging with the Location files of each corresponding year based on the EVENT_ID
+- Merging with the Location files of each corresponding year based on the (`EVENT_ID`)
   
 - Each row contains (`EVENT_ID`) (specify the event), state/county, and begin/end time of each flood event, as well as the location information (coordinates) of each event.
   
