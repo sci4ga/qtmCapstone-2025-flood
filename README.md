@@ -99,6 +99,41 @@ fatality CSVs for 2000-2023, cleans and joins them with county polygons.
 - Generates Visualizations for event count distribution by years, as well as limitations of the duration data in the database.
 
 
+## Regression Analysis
+- This analysis investigates the relationship between land cover changes (specifically Developed Sites, Wetland, and Forest) and changes in storm event frequencies across counties in Georgia. We use a linear regression to examine whether percentage changes in land cover are associated with rate changes in flood/storm event frequencies between two time periods: 2000–2005 and 2018–2023. 
+
+**Files Used:**
+
+**0023_Normalized_event_count_comparison_RoC 1.csv**
+
+- Contains storm event counts per county for two periods (sum_2000_2005, sum_2018_2023) and their computed rate of change (rate_of_change, rate_of_change (%)).
+
+
+**Land_Cover_Change_Summary_with_Rate.csv**
+- Contains land cover percentage averages (Early_Avg, Late_Avg) and calculated change rates (Change_Rate) for various land cover types (e.g., Wetland, Developed).
+
+## Software & Libraries
+The analysis is written in Python 3 using the following libraries:
+- pandas (for data manipulation)
+  
+- numpy (for numeric operations, particularly linear regression fitting)
+  
+- matplotlib (for plotting the regression scatterplot and line)
+
+
+## Regression steps
+- The analysis begins by importing storm event and land cover datasets as pandas DataFrames.
+- County names in both datasets are standardized by converting them to uppercase and removing the suffix `County` to ensure they merge correctly.
+- The analysis focuses on a single land cover type of interest (e.g., "Wetland"), filtering the land cover dataset accordingly.
+- Afterward, the two datasets are merged based on the standardized county names.
+- Key variables, including land cover change rate (Change_Rate), storm event rate of change (`rate_of_change (%)`), and storm event counts in two periods (`sum_2000_2005`, `sum_2018_2023`), are converted to numeric types, and rows with missing data in any of these fields are removed to maintain data quality.
+- To focus the analysis on meaningful storm activity, we also tried to drop counties that recorded fewer than five storm events in both periods, which is reflected in the second code trunk of the regression code file.
+- Since the results are not ideal and counterintuitive, we did not present this version in our final presentation; however, future analysis can try to use this method to focus on counties with a minimum meaningful storm event frequency.
+- The final analysis uses a simple linear regression model, with the percentage change in land cover as the independent variable and the percentage change in storm event frequency as the dependent variable.
+- Results are visualized using a scatter plot with the regression line overlaid in red for clarity.
+
+
+
 —
 
 
