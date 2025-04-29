@@ -39,6 +39,11 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 
 ## Data Cleaning Updated  
 - https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
+
+Packages and python version:
+Python 3.11.5 
+Packages used: pandas, numpy, folium, re, mpl_toolkits.basemap, seaborn, os, glob, matplotlib.pyplot
+
 - A data cleaning file of CSVs that records flood event details from 1985 to 2024, merged with location files, with folium maps created by year and month, giving an overview of how flood events are distributed
 
 
@@ -48,6 +53,10 @@ https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/StormData%20RoC%20Cla
 ***A county-level look at how Georgia flood events have changed from 2000-2005 to 2018-2023***
 
 ### Overview
+Packages and python version:
+Python 3.11.5 
+Packages used: pandas, numpy, seaborn, re, geopandas, shapely.geometry, os, glob, matplotlib.pyplot
+
 `StormData RoC Cla.ipynb` merges **NOAA Storm Events** detail, location and
 fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
 
