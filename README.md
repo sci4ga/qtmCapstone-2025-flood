@@ -9,7 +9,7 @@ The project “Discover Land Cover and Flooding in Georgia” is a data story co
 
 ## Land Cover Analysis
 
-Packages and python version:  
+**Packages and python version:**  
 
 Python 3.11.5 
 
@@ -42,7 +42,7 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 ## Data Cleaning Updated  
 - https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20updated.ipynb
 
-Packages and python version:
+**Packages and python version:**
 
 Python 3.11.5 
 
@@ -57,7 +57,7 @@ https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/StormData%20RoC%20Cla
 ***A county-level look at how Georgia flood events have changed from 2000-2005 to 2018-2023***
 
 ### Overview
-Packages and python version:
+**Packages and python version:**
 
 Python 3.11.5 
 
