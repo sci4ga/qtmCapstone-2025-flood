@@ -1,4 +1,4 @@
-# QTMCapstone-2025-flood
+# QTMCapstone-2025-Flood
 
 **Discover Land Cover and Flooding in Georgia**
 ***Summer Sun, Sylvia Xing, Ellie Yang***
