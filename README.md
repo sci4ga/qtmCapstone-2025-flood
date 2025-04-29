@@ -66,7 +66,21 @@ Python 3.11.5
 Packages used: pandas, numpy, seaborn, re, geopandas, shapely.geometry, os, glob, matplotlib.pyplot
 
 `StormData RoC Cla.ipynb` merges **NOAA Storm Events** detail, location and
-fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
+fatality CSVs for 2000-2023, cleans and joins them with county polygons.
+
+- The original dataset is large, including data from all states in the US and different kinds of events (e.g., flood, hurricane, thunderstorm, etc.).
+  
+- We are selecting only data from 2000-2024, as data before 1996 are either not significant enough or do not specify a majority of counties in Georgia, which brings trouble to the merging process.
+  
+- Events from Georgia are selected. Among the events, only `Flood`, `Flash Flood`, and `Coastal Flood` are selected to be considered. According to suggestion, ‘Hurricane’ will be taken into consideration in the future.
+   
+- Merging with the Location files of each corresponding year based on the EVENT_ID
+  
+- Each row contains (`EVENT_ID`) (specify the event), state/county, and begin/end time of each flood event, as well as the location information (coordinates) of each event.
+  
+- Thus, we can utilize the folium map to visualize the distribution of flood events that happened in Georgia for each year/month.
+  
+- We utilized the data from 1996 and 2024 to calculate the rate of change of the flood events that occurred in each county. We have counted the number of the floods of the two years and calculated the percentage changes of the numbers, taken as the rate of change of the flood event:
 
 - Aggregate yearly event counts (`event_count`) and total flood-duration (minutes) by county (`CZ_NAME`).
 
@@ -83,6 +97,7 @@ fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
      - GeoJSONs (merged_details (1).geojson https://github.com/sci4ga/qtmCapstone-2025 flood/blob/main/merged_details(1).geojson)for future heatmap and swipe map creation.
 
 - Generates Visualizations for event count distribution by years, as well as limitations of the duration data in the database.
+
 
 —
 
