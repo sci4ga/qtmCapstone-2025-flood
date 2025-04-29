@@ -112,7 +112,7 @@ fatality CSVs for 2000-2023, cleans and joins them with county polygons.
 **Land_Cover_Change_Summary_with_Rate.csv**
 - Contains land cover percentage averages (Early_Avg, Late_Avg) and calculated change rates (Change_Rate) for various land cover types (e.g., Wetland, Developed).
 
-# Software & Libraries
+### Software & Libraries
 The analysis is written in Python 3 using the following libraries:
 - pandas (for data manipulation)
   
