@@ -1,10 +1,10 @@
-# qtmCapstone-2025-flood
+# QTMCapstone-2025-flood
 
-**Discover Land Cover and Flooding in Georgia****
+**Discover Land Cover and Flooding in Georgia**
 ***Summer Sun, Sylvia Xing, Ellie Yang***
 # Overview of the Project
 The project “Discover Land Cover and Flooding in Georgia” is a data story constructed during the Emory QTM Capstone class. The project is planned to explore the connection between land cover change and flooding events in Georgia, and thus raise awareness among community members about flooding. Mainland cover types looked into are forest, wetland, and developed sites. This shared folder contains all the datasets and their descriptions for this project.
-Link to Data Story: https://arcg.is/zmm1q2
+**Link to Data Story:** https://arcg.is/zmm1q2
 
 
 # Land Cover Analysis
@@ -38,25 +38,27 @@ https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/data%20clean%20update
 _A data cleaning file of CSVs that records flood event details from 1985 to 2024, merged with location files, with folium maps created by year and month, giving an overview of how flood events are distributed
 ---
 
-
 # Storm-Event Rate-of-Change (RoC) Analysis  
 https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/StormData%20RoC%20Cla.ipynb
-_A county-level look at how Georgia flood events have changed from 2000-2005 to 2018-2023_
+***A county-level look at how Georgia flood events have changed from 2000-2005 to 2018-2023***
 
 ## Overview
 `StormData RoC Cla.ipynb` merges **NOAA Storm Events** detail, location and
 fatality CSVs for 2000-2023, cleans and joins them with county polygons, then
 
-**Aggregate yearly event counts (`event_count`) and total flood-duration (minutes) by county (`CZ_NAME`). Total flood-duration is calculated by (`END_TIME`) -  (`BEGIN_TIME`)
+- Aggregate yearly event counts (`event_count`) and total flood-duration (minutes) by county (`CZ_NAME`). Total flood-duration is calculated by (`END_TIME`) -  (`BEGIN_TIME`)
 
-**Compares two multi-year windows (2000-2005 vs 2018-2023) and computes  
+- Compares two multi-year windows (2000-2005 vs 2018-2023) and computes  
    `rate_change_percent` for both event counts and duration (minutes) per county per year.
    
-**Normalized rate of change calculation by setting the range from -100 to 100.
+- Normalized rate of change calculation by setting the range from -100 to 100.
 
-**Exports tidy CSV summaries (​​rate_change_per_county_Storm.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/rate_change_per_county_Storm.csv) & (0023_Normalized_event_count_comparison_RoC 1.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/0023_Normalized_event_count_comparison_RoC%201.csv)and GeoJSONs (merged_details (1).geojson https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/merged_details(1).geojson)for future heatmap and swipe map creation.
+- Exports tidy CSV summaries
+     - (​​rate_change_per_county_Storm.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/rate_change_per_county_Storm.csv) 
+     - (0023_Normalized_event_count_comparison_RoC 1.csv https://github.com/sci4ga/qtmCapstone-2025-flood/blob/main/0023_Normalized_event_count_comparison_RoC%201.csv)
+     - GeoJSONs (merged_details (1).geojson https://github.com/sci4ga/qtmCapstone-2025 flood/blob/main/merged_details(1).geojson)for future heatmap and swipe map creation.
 
-**Generates Visualizations for event count distribution by years, as well as limitations of the duration data in the database.
+- Generates Visualizations for event count distribution by years, as well as limitations of the duration data in the database.
 
 —
 
