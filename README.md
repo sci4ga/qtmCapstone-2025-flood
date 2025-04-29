@@ -9,6 +9,10 @@ The project “Discover Land Cover and Flooding in Georgia” is a data story co
 
 ## Land Cover Analysis
 
+Packages and python version:  
+Python 3.11.5 
+Packages used: pandas, os, glob, matplotlib.pyplot, sklearn.linear_model 
+
 The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each containing the land cover data from 1985-2023 for all the counties (159 in total) in Georgia. The data has two versions:  
 1. the unit is in square kilometer  
 2. the unit is the percentage of this land cover type in the county.  
