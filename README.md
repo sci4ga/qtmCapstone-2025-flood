@@ -33,7 +33,7 @@ The raw data on the National Land Cover Database(NLCD) were 159 CSV files, each 
 
 **Visualization_ESRI_percentage:** Merge the NLCD dataset (percentage unit) with the shpefile of Georgia counties for making maps on ESRI  
 
-**regression and land cover analyses:** Including following contents:  
+**Regression and land cover analyses:** Including following contents:  
 - Make 3 regressions, with x being the percentage mean coverage of wetland, forest or developed sites in 2018-2023, and y being the storm event account in 2018-2023;  
 - Area change of wetland, forest, and developed sites from 1985-2023;  
 - Percentage change of wetland, forest, and developed sites from 2000-2023;  
